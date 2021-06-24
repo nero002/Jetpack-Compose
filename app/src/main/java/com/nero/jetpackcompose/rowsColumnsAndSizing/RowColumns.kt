@@ -14,25 +14,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.nero.jetpackcompose.Greeting
 import com.nero.jetpackcompose.rowsColumnsAndSizing.ui.theme.JetpackComposeTheme
 
 class RowColumns : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            Column(
-                modifier = Modifier
-                    .fillMaxSize(0.5f)
-                    .background(Color.Green)
-                    .width(200.dp)
-                    .fillMaxSize(0.7f),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.SpaceEvenly
-            ) {
-                Text(text = "Hello")
-                Text("World")
 
-            }
+        setContent {
+
+        }
 
 //            Row(
 //                modifier = Modifier
@@ -44,6 +35,25 @@ class RowColumns : ComponentActivity() {
 //                Text(text = "Hello")
 //                Text("Row")
 //            }
+
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+    JetpackComposeTheme {
+        Column(
+            modifier = Modifier
+                .fillMaxSize(0.5f)
+                .background(Color.Green)
+                .width(200.dp)
+                .fillMaxSize(0.7f),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text(text = "Hello")
+            Text("World")
 
         }
     }
