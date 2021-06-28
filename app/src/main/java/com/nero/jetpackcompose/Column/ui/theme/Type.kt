@@ -1,4 +1,4 @@
-package com.nero.jetpackcompose.rowsColumnsAndSizing.ui.theme
+package com.nero.jetpackcompose.Column.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

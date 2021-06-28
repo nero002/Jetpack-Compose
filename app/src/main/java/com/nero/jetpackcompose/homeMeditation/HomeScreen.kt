@@ -117,19 +117,19 @@ fun CurrentMeditation(
             )
         }
 
-        Box(
-            contentAlignment = Alignment.Center,
-            modifier = Modifier
-                .padding(start = 15.dp, top = 15.dp, bottom = 15.dp)
-                .clickable { selectedChipsIndex = it }
-                .clip(RoundedCornerShape(10.dp))
-                .background(
-                    if (selectedChipsIndex == it) ButtonBlue
-                    else DarkerButtonBlue
-                )
-                .padding(15.dp)
-
-        )
+//        Box(
+//            contentAlignment = Alignment.Center,
+//            modifier = Modifier
+//                .padding(start = 15.dp, top = 15.dp, bottom = 15.dp)
+//                .clickable { selectedChipsIndex = it }
+//                .clip(RoundedCornerShape(10.dp))
+//                .background(
+//                    if (selectedChipsIndex == it) ButtonBlue
+//                    else DarkerButtonBlue
+//                )
+//                .padding(15.dp)
+//
+//        )
 
     }
 }

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JetpackCompose">
         <activity
-            android:name=".rowsColumnsAndSizing.RowColumns"
+            android:name=".Column.Column"
             android:exported="true"
             android:label="@string/title_activity_row_columns"
             android:theme="@style/Theme.JetpackCompose.NoActionBar">
